@@ -636,4 +636,7 @@
     <!-- Enable Smart charging. -->
     <bool name="config_smartChargingAvailable">true</bool>
 
+    <!-- Allow automatic adjusting of the screen brightness while dozing in low power state. -->
+    <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
+
 </resources>
