@@ -183,10 +183,6 @@ PRODUCT_PACKAGES += \
     cneapiclient \
     com.quicinc.cne
 
-# Configstore
-PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.0-service
-
 # Codec2 modules
 PRODUCT_PACKAGES += \
     com.android.media.swcodec \
