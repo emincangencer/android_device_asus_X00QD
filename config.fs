@@ -22,6 +22,9 @@ user: AID_BLUETOOTH
 group: AID_BLUETOOTH
 caps: BLOCK_SUSPEND
 
+[AID_VENDOR_THERMAL]
+value:2907
+
 [system/vendor/bin/wcnss_filter]
 mode: 0755
 user: AID_BLUETOOTH
