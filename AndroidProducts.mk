@@ -19,4 +19,5 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     lineage_X00QD-userdebug \
-    lineage_X00QD-eng
+    lineage_X00QD-eng \
+    lineage_X00QD-user 
