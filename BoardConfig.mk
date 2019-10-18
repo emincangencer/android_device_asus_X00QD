@@ -166,6 +166,7 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/bus/i2c/devices/4-0038/dclick_mode"
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
