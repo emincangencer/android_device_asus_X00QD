@@ -231,6 +231,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.custom_ecc=1 \
     persist.vendor.radio.rat_on=combine \
     persist.vendor.qti.telephony.vt_cam_interface=1 \
+    persist.vendor.radio.data_ltd_sys_ind=1 \
+    persist.vendor.radio.data_con_rprt=1 \
     ril.subscription.types=NV,RUIM \
     rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
     ro.carrier=unknown \
@@ -239,6 +241,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.ecclist=112,911 \
     ro.telephony.default_network=20,20 \
     telephony.lteOnCdmaDevice=1
+
+# Radio - IMS
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.dbg.ims_volte_enable=1 \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1 \
+    persist.vendor.ims.disableADBLogs=1 \
+    persist.vendor.ims.disableQXDMLogs=1 \
+    persist.vendor.ims.disableDebugLogs=1 \
+    persist.vendor.ims.disableIMSLogs=1
 
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
