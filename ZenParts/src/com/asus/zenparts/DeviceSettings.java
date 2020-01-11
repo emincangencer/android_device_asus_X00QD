@@ -18,6 +18,7 @@ package com.asus.zenparts;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -28,8 +29,7 @@ import androidx.preference.PreferenceManager;
 import androidx.preference.SwitchPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
-import android.content.Context;
-import android.content.SharedPreferences;
+import androidx.preference.TwoStatePreference;
 import android.util.Log;
 
 import com.asus.zenparts.kcal.KCalSettingsActivity;
@@ -66,6 +66,7 @@ public class DeviceSettings extends PreferenceFragment implements
     public static final String PREF_SPECTRUM = "spectrum";
     public static final String SPECTRUM_SYSTEM_PROPERTY = "persist.spectrum.profile";
 
+    private static final String KEY_ENABLE_DOLBY_ATMOS = "enable_dolby_atmos";
     public static final String PREF_ENABLE_DIRAC = "dirac_enabled";
     public static final String PREF_HEADSET = "dirac_headset_pref";
     public static final String PREF_PRESET = "dirac_preset_pref";
@@ -111,6 +112,7 @@ public class DeviceSettings extends PreferenceFragment implements
     private Preference mKcal;
     private SecureSettingListPreference mSPECTRUM;
     private Preference mAmbientPref;
+    private static TwoStatePreference mEnableDolbyAtmos;
     private SecureSettingSwitchPreference mEnableDirac;
     private SecureSettingListPreference mHeadsetType;
     private SecureSettingListPreference mPreset;
@@ -218,6 +220,9 @@ public class DeviceSettings extends PreferenceFragment implements
                 enhancerEnabled = false;
             }
         }
+
+        mEnableDolbyAtmos = (TwoStatePreference) findPreference(KEY_ENABLE_DOLBY_ATMOS);
+        mEnableDolbyAtmos.setOnPreferenceChangeListener(this);
 
         mEnableDirac = (SecureSettingSwitchPreference) findPreference(PREF_ENABLE_DIRAC);
         mEnableDirac.setOnPreferenceChangeListener(this);
@@ -364,6 +369,26 @@ public class DeviceSettings extends PreferenceFragment implements
                   setSelinuxEnabled(mSelinuxMode.isChecked(), (Boolean) value);
                   return true;
                 }
+
+            case KEY_ENABLE_DOLBY_ATMOS:
+                  if (preference == mEnableDolbyAtmos) {
+                  boolean enable = (Boolean) value;
+                  Intent daxService = new Intent();
+                  ComponentName name = new ComponentName("com.dolby.daxservice", "com.dolby.daxservice.DaxService");
+                  daxService.setComponent(name);
+                  if (enable) {
+                      // enable service component and start service
+                      this.getContext().getPackageManager().setComponentEnabledSetting(name, 
+                              PackageManager.COMPONENT_ENABLED_STATE_DEFAULT, 0);
+                      this.getContext().startService(daxService);
+                  } else {
+                      // disable service component and stop service
+                      this.getContext().stopService(daxService);
+                      this.getContext().getPackageManager().setComponentEnabledSetting(name,
+                              PackageManager.COMPONENT_ENABLED_STATE_DISABLED, 0);
+                  }
+                  return true;
+              }
 
                 break;
 
