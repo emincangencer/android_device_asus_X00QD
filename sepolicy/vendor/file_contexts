@@ -28,3 +28,6 @@
 
 # Thermal
 /vendor/bin/hw/android\.hardware\.thermal@2\.0-service\.qti                u:object_r:hal_thermal_default_exec:s0
+
+# Device nodes
+/dev/stune(/.*)?                                                                    u:object_r:cgroup:s0
