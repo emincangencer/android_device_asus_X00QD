@@ -5,6 +5,9 @@
 /firmware                                                                     u:object_r:firmware_file:s0
 /bt_firmware                                                                  u:object_r:bt_firmware_file:s0
 
+# Dolby
+/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@1\.0-service                     u:object_r:hal_dms_default_exec:s0
+
 # Sensors
 /sys/devices/virtual/sensors/frgbsensor(/.*)?		u:object_r:sysfs_sensors:s0
 /sys/devices/virtual/sensors/[lp]sensor(/.*)?		u:object_r:sysfs_sensors:s0

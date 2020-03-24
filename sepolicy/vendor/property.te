@@ -1,2 +1,5 @@
 type cdfinger_prop, property_type;
 type dirac_prop, property_type;
+
+# Dolby
+type vendor_dolby_loglevel_prop, property_type;
