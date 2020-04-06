@@ -372,11 +372,6 @@ else
 
             vmpres_file_min=$((minfree_5 + (minfree_5 - rem_minfree_4)))
             echo $vmpres_file_min > /sys/module/lowmemorykiller/parameters/vmpressure_file_min
-			if [ $MemTotal -gt 2097152 ]; then
-		    # Huaqin add for ZQL1820-699 by shengzhong at 2018/09/19 start
-		    echo "48432,63040,70648,95256,130296,145640" > /sys/module/lowmemorykiller/parameters/minfree
-		    # Huaqin add for ZQL1820-699 by shengzhong at 2018/09/19 end
-			fi
         else
             # Set LMK series, vmpressure_file_min for 32 bit non-go targets.
             # Disable Core Control, enable KLMK for non-go 8909.
