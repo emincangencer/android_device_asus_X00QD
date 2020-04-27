@@ -22,4 +22,4 @@
 
 /sys/module/usb_f_qcrndis/parameters(/.*)?         u:object_r:sysfs_usb_rndis:s0
 
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.X00TD                    u:object_r:hal_lineage_touch_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.X00QD                    u:object_r:hal_lineage_touch_default_exec:s0

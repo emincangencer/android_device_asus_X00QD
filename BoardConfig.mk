@@ -22,7 +22,7 @@
 # definition file).
 #
 
-DEVICE_PATH := device/asus/X00TD
+DEVICE_PATH := device/asus/X00QD
 
 BOARD_VENDOR := asus
 
@@ -52,7 +52,7 @@ BUILD_BROKEN_DUP_RULES := true
 
 # Assert
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
-TARGET_OTA_ASSERT_DEVICE := ASUS_X00TD,X00TD,X00T
+TARGET_OTA_ASSERT_DEVICE := ASUS_X00QD,X00QD,X00Q
 
 # Kernel
 BOARD_KERNEL_BASE        := 0x00000000
@@ -63,7 +63,7 @@ BOARD_KERNEL_PAGESIZE    := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET     := 0x01000000
 TARGET_KERNEL_SOURCE := kernel/asus/sdm660
-TARGET_KERNEL_CONFIG := X00TD_defconfig
+TARGET_KERNEL_CONFIG := X00QD_defconfig
 TARGET_KERNEL_VERSION := 4.4
 TARGET_KERNEL_CLANG_COMPILE := true
 
@@ -221,7 +221,7 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 
 # Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_X00TD
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_X00QD
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # RIL
@@ -248,8 +248,8 @@ BOARD_VNDK_RUNTIME_DISABLE := true
 TARGET_USE_SDCLANG := true
 
 # Vendor init
-TARGET_INIT_VENDOR_LIB := libinit_X00TD
-TARGET_RECOVERY_DEVICE_MODULES := libinit_X00TD
+TARGET_INIT_VENDOR_LIB := libinit_X00QD
+TARGET_RECOVERY_DEVICE_MODULES := libinit_X00QD
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
@@ -268,4 +268,4 @@ WIFI_DRIVER_OPERSTATE_PATH := "/sys/class/net/wlan0/operstate"
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # inherit from the proprietary version
--include vendor/asus/X00TD/BoardConfigVendor.mk
+-include vendor/asus/X00QD/BoardConfigVendor.mk

@@ -116,45 +116,45 @@ void vendor_check_variant()
 
     // Russian model has a slightly different product name
     if (region == "RU")
-        product_name = "RU_X00TD";
+        product_name = "RU_X00QD";
     else
-        product_name = "WW_X00TD";
+        product_name = "WW_X00QD";
 
     // 6 GB variant
     if (sys.totalram > 4096ull * 1024 * 1024) {
         // Russian model
         if (region == "RU") {
-            build_fingerprint = "asus/RU_X00TD/ASUS_X00T_9:9/PKQ1/16.2017.1903.050-20190401:user/release-keys";
-            product_device = "ASUS_X00T_9";
+            build_fingerprint = "asus/RU_X00QD/ASUS_X00Q_9:9/PKQ1/16.2017.1903.050-20190401:user/release-keys";
+            product_device = "ASUS_X00QD";
 
         // Global model
         } else {
-            build_fingerprint = "asus/WW_X00TD/ASUS_X00T_3:9/PKQ1/16.2017.1903.050-20190401:user/release-keys";
-            product_device = "ASUS_X00T_3";
+            build_fingerprint = "asus/WW_X00QD/ASUS_X00Q_3:9/PKQ1/16.2017.1903.050-20190401:user/release-keys";
+            product_device = "ASUS_X00QD";
         }
 
     // 3/4 GB variants
     } else {
         // Russian model
         if (region == "RU") {
-            build_fingerprint = "asus/RU_X00TD/ASUS_X00T_6:9/PKQ1/16.2017.1903.050-20190401:user/release-keys";
-            product_device = "ASUS_X00T_6";
+            build_fingerprint = "asus/RU_X00QD/ASUS_X00Q_6:9/PKQ1/16.2017.1903.050-20190401:user/release-keys";
+            product_device = "ASUS_X00QD";
 
         // Global model
         } else {
-            build_fingerprint = "asus/WW_X00TD/ASUS_X00T_2:9/PKQ1/16.2017.1903.050-20190401:user/release-keys";
-            product_device = "ASUS_X00T_2";
+            build_fingerprint = "asus/WW_X00QD/ASUS_X00Q_2:9/PKQ1/16.2017.1903.050-20190401:user/release-keys";
+            product_device = "ASUS_X00QD";
         }
     }
 
     // Product model overrides
     if (region == "RU" || region == "TW" ||
         (region == "PH" && sys.totalram > 3072ull * 1024 * 1024))
-        product_model = "ASUS_X00TDB";
+        product_model = "ASUS_X00QD";
     else if (sys.totalram < 3072ull * 1024 * 1024)
-        product_model = "ASUS_X00TDA";
+        product_model = "ASUS_X00QD";
     else
-        product_model = "ASUS_X00TD";
+        product_model = "ASUS_X00QD";
 
     // Override props based on values set
     property_override_dual("ro.product.device", "ro.vendor.product.device", product_device);
