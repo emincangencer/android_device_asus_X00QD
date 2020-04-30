@@ -6,8 +6,8 @@
 /bt_firmware                                                                  u:object_r:bt_firmware_file:s0
 
 # Sensors
-/sys/devices/virtual/input/input[0-9]+/stk3x1x-proximity(/.*)?          u:object_r:sysfs_sensors:s0
-/sys/devices/virtual/input/input[0-9]+/stk3x1x-light(/.*)?              u:object_r:sysfs_sensors:s0
+/sys/devices/virtual/sensors/frgbsensor(/.*)?		u:object_r:sysfs_sensors:s0
+/sys/devices/virtual/sensors/[lp]sensor(/.*)?		u:object_r:sysfs_sensors:s0
 
 # NFC
 /(vendor|system/vendor)/bin/hw/vendor\.nxp\.nxpnfc@1\.0-service         u:object_r:nxpnfc_hal_svc_exec:s0

@@ -72,6 +72,11 @@ on early-boot
     write /sys/kernel/boot_slpi/boot 1
     setprop ro.alarm_boot false
 
+    # add by wildbook at 20190828 +++
+     chown system system /dev/input/event3  # stk3x3x-light
+     chown system system /dev/input/event4  # stk3x3x-proximity
+    # add by wildbook at 20190828 ---
+
     # for backward compatibility
     chown system system /persist/sensors
     chown system system /persist/sensors/registry

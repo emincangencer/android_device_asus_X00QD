@@ -157,6 +157,10 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/fpsdev0              0666   system     system
 /* Huaqin modify for ZQL1650-143 by wangxiang at 2018/01/23 end */
 
+#qvr
+/dev/qvr_external_sensor_ioctl      0660  system  system
+/sys/kernel/qvr_external_sensor/fd  0660  system  system
+
 /* Huaqin add for ZQL1650-143 by wangxiang at 2018/02/09 end */
 /dev/goodix_fp            0666   system     system
 /* Huaqin add for ZQL1650-143 by wangxiang at 2018/02/09 end */
@@ -327,7 +331,9 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/ramdump*             0640   system     system
 
 # Fingerprint device
-/dev/qbt1000              0660   system     system
+/dev/qbt*                 0660   system     system
+/sys/class/fts/touch_aoi aoi_set 0660 root system
+/sys/class/fts/touch_aoi power_set 0660 root system
 
 #ImproveTouch device
 /dev/hbtp_input           0660   system     system
@@ -341,6 +347,8 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/block/platform/soc/c0c4000.sdhci/by-name/frp       0600   system     system
 /dev/block/platform/soc/1d84000.ufshc/by-name/frp       0600   system     system
 /dev/block/platform/soc/7c4000.sdhci/by-name/frp        0600   system     system
+/dev/block/platform/soc/4744000.sdhci/by-name/frp       0600   system     system
+/dev/block/platform/soc/4804000.ufshc/by-name/frp       0600   system     system
 
 # This is temporary while using SD card for initial bring-up
 /dev/block/platform/soc/8804000.sdhci/by-name/frp       0600   system     system
