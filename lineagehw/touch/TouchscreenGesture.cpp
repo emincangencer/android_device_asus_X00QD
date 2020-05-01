@@ -51,7 +51,7 @@ namespace V1_0 {
 namespace implementation {
 
 static constexpr const char* kGestureNodePath =
-    "/sys/kernel/touchpanel/gesture_node";
+    "/sys/devices/soc/c178000.i2c/i2c-4/4-0038/gesture_mode";
 
 Return<void> TouchscreenGesture::getSupportedGestures(getSupportedGestures_cb resultCb) {
     std::vector<Gesture> gestures;

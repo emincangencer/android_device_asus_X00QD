@@ -209,7 +209,7 @@ TARGET_PER_MGR_ENABLED := true
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
-TARGET_TAP_TO_WAKE_NODE := "/sys/kernel/touchpanel/dclicknode"
+TARGET_TAP_TO_WAKE_NODE := "/sys/devices/soc/c178000.i2c/i2c-4/4-0038/dclick_mode"
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
