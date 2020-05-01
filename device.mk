@@ -117,7 +117,8 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0 \
-    libbthost_if
+    libbthost_if \
+    libldacBT_dec
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
