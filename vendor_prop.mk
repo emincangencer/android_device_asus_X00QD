@@ -298,3 +298,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # ZRAM disk
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.config.zram=true
+
+# USB debugging at boot
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0 \
+    ro.secure=0 \
+    ro.debuggable=1        
