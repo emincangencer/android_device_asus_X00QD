@@ -134,7 +134,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.dpm.feature=1
+    persist.vendor.dpm.feature= \
     persist.vendor.dpm.nsrm.bkg.evt=3955
 
 # DRM
@@ -245,7 +245,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # RmNet Data
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.data.df.dev_name=rmnet_usb0
+    persist.data.df.dev_name=rmnet_usb0 \
     persist.vendor.radio.add_power_save=1
 
 # Sensor
