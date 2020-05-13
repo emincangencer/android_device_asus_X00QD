@@ -124,12 +124,12 @@ void vendor_check_variant()
     if (sys.totalram > 4096ull * 1024 * 1024) {
         // Russian model
         if (region == "RU") {
-            build_fingerprint = "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys";
+            build_fingerprint = "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys";
             product_device = "ASUS_X00QD";
 
         // Global model
         } else {
-            build_fingerprint = "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys";
+            build_fingerprint = "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys";
             product_device = "ASUS_X00QD";
         }
 
@@ -137,12 +137,12 @@ void vendor_check_variant()
     } else {
         // Russian model
         if (region == "RU") {
-            build_fingerprint = "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys";
+            build_fingerprint = "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys";
             product_device = "ASUS_X00QD";
 
         // Global model
         } else {
-            build_fingerprint = "google/coral/coral:10/QQ2A.200405.005/6254899:user/release-keys";
+            build_fingerprint = "google/coral/coral:10/QQ2A.200501.001.B2/6352890:user/release-keys";
             product_device = "ASUS_X00QD";
         }
     }
