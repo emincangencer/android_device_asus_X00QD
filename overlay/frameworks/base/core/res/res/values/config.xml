@@ -415,9 +415,9 @@
         Z @dp</string>
 
      <!-- Height of the status bar -->
-    <dimen name="status_bar_height">81.px</dimen>
-    <dimen name="status_bar_height_portrait">81.0px</dimen>
-    <dimen name="status_bar_height_landscape">81.0px</dimen>
+    <dimen name="status_bar_height">87.px</dimen>
+    <dimen name="status_bar_height_portrait">87.0px</dimen>
+    <dimen name="status_bar_height_landscape">87.0px</dimen>
 
     <!-- Set to true if the wifi display supports compositing content stored
          in gralloc protected buffers.  For this to be true, there must exist
