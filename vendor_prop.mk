@@ -305,3 +305,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
     ro.secure=0 \
     ro.debuggable=1        
+
+# gesture
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.asus.gesture.switch=1

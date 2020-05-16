@@ -1112,6 +1112,17 @@ service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service
     interface android.hardware.audio@4.0::IDevicesFactory default
     interface android.hardware.audio@2.0::IDevicesFactory default
 
+on property:persist.asus.gesture.switch=1
+    write /proc/tpd_gesture 1
+    write /sys/bus/i2c/devices/4-0038/dclick_mode 1
+    write /sys/bus/i2c/devices/4-0038/swipeup_mode 1
+    write /sys/bus/i2c/devices/4-0038/gesture_mode 1111111
+on property:persist.asus.gesture.switch=0
+    write /proc/tpd_gesture 0
+    write /sys/bus/i2c/devices/4-0038/dclick_mode 0
+    write /sys/bus/i2c/devices/4-0038/swipeup_mode 0
+    write /sys/bus/i2c/devices/4-0038/gesture_mode 0000000
+
 service vendor.wifilearner /vendor/bin/wifilearner
     class main
     user wifi
