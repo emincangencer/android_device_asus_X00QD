@@ -29,7 +29,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.offload.multiple.enabled=false \
     vendor.audio.offload.passthrough=false \
     vendor.audio.offload.track.enable=true \
-    vendor.audio.feature.a2dp_offload.enable
     vendor.audio.parser.ip.buffer.size=262144 \
     vendor.audio.safx.pbe.enabled=true \
     vendor.audio.spkr_prot.tx.sampling_rate=48000 \
@@ -304,7 +303,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp,adb \
     ro.adb.secure=0 \
     ro.secure=0 \
-    ro.debuggable=1        
+    ro.debuggable=1
 
 # gesture
 PRODUCT_PROPERTY_OVERRIDES += \
