@@ -3161,9 +3161,7 @@ vendor/lib/android.hardware.audio.common@4.0-util.so
 vendor/lib/android.hardware.audio.common@5.0-util.so
 vendor/lib/android.hardware.camera.provider@2.4-external.so
 vendor/lib/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib/btaudio_offload_if.so
 vendor/lib/dualcali_dump.bin
-vendor/lib/liba2dpoffload.so
 vendor/lib/libbatterylistener.so
 vendor/lib/libcacertclient.so
 vendor/lib/libcirrusspkrprot.so
@@ -3231,8 +3229,6 @@ vendor/lib64/android.hardware.audio.common@4.0-util.so
 vendor/lib64/android.hardware.audio.common@5.0-util.so
 vendor/lib64/android.hardware.camera.provider@2.4-external.so
 vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
-vendor/lib64/btaudio_offload_if.so
-vendor/lib64/liba2dpoffload.so
 vendor/lib64/libappclassifier.so
 vendor/lib64/libbatterylistener.so
 vendor/lib64/libcacertclient.so
