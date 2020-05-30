@@ -6,3 +6,9 @@ allow system_app sysfs_vibrator:file { getattr read write open };
 allow system_app sysfs_leds:dir search;
 allow system_app sysfs_leds:file { open getattr write };
 allow system_app sysfs_fps:file rw_file_perms;
+
+allow system_app boosts_prop:property_service set;
+
+# GPU/CPU Boosts
+set_prop(system_app, boosts_prop);
+get_prop(system_app, boosts_prop);

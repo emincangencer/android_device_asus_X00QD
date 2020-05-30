@@ -8,3 +8,7 @@ persist.audio.dirac                u:object_r:dirac_prop:s0
 
 # Dolby
 persist.vendor.dolby.loglevel                 u:object_r:vendor_dolby_loglevel_prop:s0
+
+# GPU/CPU Boosts
+persist.zenparts.gpu_profile                  u:object_r:boosts_prop:s0
+persist.zenparts.cpu_profile                  u:object_r:boosts_prop:s0
