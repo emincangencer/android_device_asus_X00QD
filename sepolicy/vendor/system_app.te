@@ -5,3 +5,4 @@ allow system_app sysfs_vibrator:dir search;
 allow system_app sysfs_vibrator:file { getattr read write open };
 allow system_app sysfs_leds:dir search;
 allow system_app sysfs_leds:file { open getattr write };
+allow system_app sysfs_fps:file rw_file_perms;
