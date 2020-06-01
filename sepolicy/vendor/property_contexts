@@ -2,3 +2,6 @@ persist.cdfinger.ready             u:object_r:cdfinger_prop:s0
 property.cdfinger.enablesave       u:object_r:cdfinger_prop:s0
 persist.vendor.runin.fp            u:object_r:cdfinger_prop:s0
 wifi.active.interface              u:object_r:exported_wifi_prop:s0
+
+# Audio
+persist.audio.dirac                u:object_r:dirac_prop:s0
