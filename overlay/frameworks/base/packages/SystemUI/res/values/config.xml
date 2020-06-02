@@ -31,4 +31,7 @@
         <item>7</item> <!-- 3: HIGH -->
         <item>27</item> <!-- 4: SUN -->
     </integer-array>
+
+    <!-- FPSInfoService Fps file path -->
+    <string name="config_fpsInfoSysNode" translatable="false">/sys/devices/virtual/graphics/fb0/measured_fps</string>
 </resources>
