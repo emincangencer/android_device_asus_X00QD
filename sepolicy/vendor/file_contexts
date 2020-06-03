@@ -21,3 +21,7 @@
 /(vendor|system/vendor)/bin/nvram_btwifi                                u:object_r:nvram_btwifi_exec:s0
 
 /sys/module/usb_f_qcrndis/parameters(/.*)?         u:object_r:sysfs_usb_rndis:s0
+
+# Kcal
+/sys/devices/platform/kcal_ctrl\.0(/.*)?                                 u:object_r:kcal_dev:s0
+/sys/bus/platform/drivers/kcal_ctrl(/.*)?                               u:object_r:kcal_dev:s0
