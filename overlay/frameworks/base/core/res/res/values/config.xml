@@ -642,16 +642,17 @@
     <!-- Allow automatic adjusting of the screen brightness while dozing in low power state. -->
     <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
 
+    <string name="config_alternativeDeviceKeyHandlerLib" translatable="false">/system/priv-app/ZenfoneParts/ZenfoneParts.apk</string>
+    <string name="config_alternativeDeviceKeyHandlerClass" translatable="false">com.asus.zenparts.KeyHandler</string>
+
     <!-- Paths to the libraries that contain device specific key handlers -->
     <string-array name="config_deviceKeyHandlerLibs" translatable="false">
-        <item>/system/priv-app/ZenfoneParts/ZenfoneParts.apk</item>
-        <item>/system/priv-app/TouchGestures/TouchGestures.apk</item>
+        <item>/system/priv-app/ZenParts/ZenParts.apk</item>
     </string-array>
 
     <!-- Names of the key handler classes -->
     <string-array name="config_deviceKeyHandlerClasses" translatable="false">
-        <item>com.android.touch.gestures.KeyHandler</item>
-        <item>com.asus.zenparts.KeyHandler</item>
+        <item>com.asus.zenparts.TouchKeyHandler</item>
     </string-array>
 
 </resources>
