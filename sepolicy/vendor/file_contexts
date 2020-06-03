@@ -23,3 +23,7 @@
 /sys/module/usb_f_qcrndis/parameters(/.*)?         u:object_r:sysfs_usb_rndis:s0
 
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.X00QD                    u:object_r:hal_lineage_touch_default_exec:s0
+
+# Kcal
+/sys/devices/platform/kcal_ctrl\.0(/.*)?                                 u:object_r:kcal_dev:s0
+/sys/bus/platform/drivers/kcal_ctrl(/.*)?                               u:object_r:kcal_dev:s0
