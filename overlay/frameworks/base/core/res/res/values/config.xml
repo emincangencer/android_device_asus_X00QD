@@ -655,4 +655,7 @@
         <item>com.asus.zenparts.TouchKeyHandler</item>
     </string-array>
 
+    <!-- If face auth sends the user directly to home/last open app, or stays on keyguard -->
+    <bool name="config_faceAuthDismissesKeyguard">true</bool>
+
 </resources>
