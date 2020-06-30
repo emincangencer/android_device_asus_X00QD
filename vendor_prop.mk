@@ -36,6 +36,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.use.sw.alac.decoder=true \
     vendor.audio.use.sw.ape.decoder=true \
     vendor.audio_hal.period_size=240 \
+    vendor.audio.hal.boot.timeout.ms=20000 \
     vendor.voice.path.for.pcm.voip=false
 
 # Audio feature flags
