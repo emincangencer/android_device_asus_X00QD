@@ -195,7 +195,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # NFC
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.nfc_nci=pn8x \
+    ro.hardware.nfc_nci=nqx.default \
     ro.nfc.port=I2C
 
 # QCOM cabl
