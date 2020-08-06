@@ -50,9 +50,6 @@
 
     <string name="audio_title">Audio</string>
 
-    <!-- Dolby Atmos -->
-    <string name="dolby_title">Dolby Atmos</string>
-
     <!-- Dirac settings -->
     <string name="dirac_title">Dirac Sound Enhancer</string>
     <string name="dirac_summary">Optimize audio quality</string>
