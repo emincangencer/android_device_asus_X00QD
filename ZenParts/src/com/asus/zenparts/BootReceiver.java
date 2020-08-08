@@ -139,9 +139,6 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
         FileUtils.setValue(DeviceSettings.TORCH_2_BRIGHTNESS_PATH,
                 Settings.Secure.getInt(context.getContentResolver(),
                         DeviceSettings.PREF_TORCH_BRIGHTNESS, 100));
-        FileUtils.setValue(DeviceSettings.NOTIF_LED_BLUE_PATH,(1 + Math.pow(1.05694,
-                Settings.Secure.getInt(context.getContentResolver(),
-                        DeviceSettings.PREF_NOTIF_LED, 100))));
         FileUtils.setValue(DeviceSettings.NOTIF_LED_RED_PATH,(1 + Math.pow(1.05694,
                 Settings.Secure.getInt(context.getContentResolver(),
                         DeviceSettings.PREF_NOTIF_LED, 100))));
