@@ -93,7 +93,6 @@ public class DeviceSettings extends PreferenceFragment implements
 
     public static final String CATEGORY_NOTIF = "notification_led";
     public static final String PREF_NOTIF_LED = "notification_led_brightness";
-    public static final String NOTIF_LED_BLUE_PATH = "/sys/class/leds/blue/max_brightness";
     public static final String NOTIF_LED_RED_PATH = "/sys/class/leds/red/max_brightness";
     public static final String NOTIF_LED_GREEN_PATH = "/sys/class/leds/green/max_brightness";
 
@@ -137,8 +136,7 @@ public class DeviceSettings extends PreferenceFragment implements
         String device = FileUtils.getStringProp("ro.build.product", "unknown");
 
         mLEDBrightness = (NotificationLedSeekBarPreference) findPreference(PREF_NOTIF_LED);
-        mLEDBrightness.setEnabled(FileUtils.fileWritable(NOTIF_LED_BLUE_PATH) &&
-              FileUtils.fileWritable(NOTIF_LED_RED_PATH) &&
+        mLEDBrightness.setEnabled(FileUtils.fileWritable(NOTIF_LED_RED_PATH) &&
                   FileUtils.fileWritable(NOTIF_LED_GREEN_PATH));
         mLEDBrightness.setOnPreferenceChangeListener(this);
 
@@ -349,7 +347,6 @@ public class DeviceSettings extends PreferenceFragment implements
                 break;
 
             case PREF_NOTIF_LED:
-                FileUtils.setValue(NOTIF_LED_BLUE_PATH, (1 + Math.pow(1.05694, (int) value )));
                 FileUtils.setValue(NOTIF_LED_RED_PATH, (1 + Math.pow(1.05694, (int) value )));
                 FileUtils.setValue(NOTIF_LED_GREEN_PATH, (1 + Math.pow(1.05694, (int) value )));
                 break;
