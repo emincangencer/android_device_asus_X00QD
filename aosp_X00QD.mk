@@ -44,6 +44,12 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 TARGET_VENDOR := asus
 TARGET_VENDOR_PRODUCT_NAME := X00QD
 
+# Maintainer
+EVO_DONATE_URL := https://www.patreon.com/emincangencer
+EVO_MAINTAINER := emincangencer
+EVO_SUPPORT_URL := https://t.me/EvolutionXX00QD
+CUSTOM_BUILD_TYPE := OFFICIAL
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="coral-user 10 QQ3A.200805.001 6578210 release-keys"
 
