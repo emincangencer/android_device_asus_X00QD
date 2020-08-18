@@ -70,6 +70,10 @@ on late-init
     start vendor.configstore-hal
     start vendor.qti.hardware.display.allocator
 
+    # Report max frequency to unity tasks.
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
+
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
 
