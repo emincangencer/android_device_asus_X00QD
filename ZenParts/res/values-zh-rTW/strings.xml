@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2018 The Asus-SDM660 Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="advanced_settings">ZenParts</string>
+    <string name="advanced_settings_summary">客製化 Customisations</string>
+
+    <string name="display_title">顯示</string>
+
+    <!-- KCal -->
+    <string name="device_kcal_title">顯示色彩校正</string>
+    <string name="kcal_enabled_summary">Calibrate Display Using KCAL</string>
+
+    <!-- Backlight Dimmer -->
+    <string name="backlight_dimmer">更暗螢的螢幕背光</string>
+    <string name="backlight_summary">使螢幕亮度顯示更暗</string>
+
+    <string name="torch_title">手電筒</string>
+    <string name="torch_brightness_title">亮度</string>
+    <string name="vibration_title">震動</string>
+    <string name="vibration_strength_title">震動強度</string>
+
+    <!-- Notification LED brightness -->
+    <string name="notification_title">通知指示燈</string>
+    <string name="notification_led_title">指示燈亮度</string>
+
+    <!-- Spectrum Profiles -->
+    <string name="spectrum_profile_title">效能</string>
+    <string name="spectrum_title">效能模式</string>
+    <string name="spectrum_summary"模式選取</string>
+    <string name="spectrum_dialogTitle">模式選取</string>
+
+    <!-- Values for Spectrum Presets -->
+    <string name="spectrum_performance">性能</string>
+    <string name="spectrum_battery">省電</string>
+    <string name="spectrum_gaming">遊戲</string>
+    <string name="spectrum_balance">平衡</string>
+
+    <string name="audio_title">聲音和音效</string>
+
+    <!-- Dirac settings -->
+    <string name="dirac_title">Dirac音效增強/string>
+    <string name="dirac_summary">最佳化聲音品質</string>
+    <string name="dirac_headset_title">耳機型號</string>
+    <string name="dirac_preset_title">音效</string>
+
+    <!-- Dirac settings: Headset types -->
+    <string name="dirac_headset_default">預設</string>
+    <string name="dirac_headset_earbuds">小米藍牙耳機</string>
+    <string name="dirac_headset_in_ear_2013">小米圈鐵耳機(2013)</string>
+    <string name="dirac_headset_piston_1">小米活塞耳機-1</string>
+    <string name="dirac_headset_general">一般</string>
+    <string name="dirac_headset_general_inear">入耳式</string>
+    <string name="dirac_headset_piston_basic">基礎版</string>
+    <string name="dirac_headset_piston_2">小米活塞耳機-2</string>
+    <string name="dirac_headset_piston_standard">Standard Edition</string>
+    <string name="dirac_headset_headphone">小米頭戴式耳機</string>
+    <string name="dirac_headset_piston_youth">小米藍牙耳機青春版</string>
+    <string name="dirac_headset_piston_color">Color Edition</string>
+    <string name="dirac_headset_in_ear">小米圈鐵耳機</string>
+    <string name="dirac_headset_capsule">Mi Capsule</string>
+    <string name="dirac_headset_in_ear_pro">小米圈鐵耳機Pro</string>
+    <string name="dirac_headset_comfort">Mi Comfort</string>
+    <string name="dirac_headset_reduction_noise">Mi Noise Cancelling Type-C</string>
+    <string name="dirac_headset_cancelling">Mi Noise Cancelling 3.5mm</string>
+    <string name="dirac_headset_half_in_ear">Mi Half In-Ear</string>
+    <string name="dirac_headset_in_ear2">小米圈鐵耳機-2</string>
+    <string name="dirac_headset_earphone_basic">Mi Earphones Basic</string>
+    <string name="dirac_headset_earphone">Mi Earphones</string>
+
+    <!-- Dirac settings: Equalizer presets -->
+    <string name="dirac_preset_default">預設</string>
+    <string name="dirac_preset_rock">搖滾</string>
+    <string name="dirac_preset_jazz">爵士</string>
+    <string name="dirac_preset_pop">流行</string>
+    <string name="dirac_preset_classical">經典</string>
+    <string name="dirac_preset_hiphop">嘻哈</string>
+    <string name="dirac_preset_blues">藍調</string>
+    <string name="dirac_preset_electronic">電音</string>
+    <string name="dirac_preset_country">鄉村</string>
+    <string name="dirac_preset_dance">舞曲</string>
+    <string name="dirac_preset_metal">重金屬</string>
+
+    <!-- Audio amplification -->
+    <string name="headphone_gain">耳機音量調整</string>
+    <string name="microphone_gain">麥克風收音調整</string>
+    <string name="earpiece_gain">通話音量調整(通話時)</string>
+    <string name="speaker_gain">揚聲器音量調整</string>
+
+    <!-- kcal -->
+    <string name="advanced_settings_kcal">顯示色彩校正</string>
+    <string name="cat_colormanagement">色彩設定</string>
+    <string name="cat_calibration">色彩校準</string>
+
+    <string name="kcal_enabled">開啟</string>
+    <string name="kcal_disabled">關閉</string>
+    <string name="set_on_boot">開機時啟用</string>
+    <string name="color_red">紅</string>
+    <string name="color_green">綠</string>
+    <string name="color_blue">藍</string>
+    <string name="color_minimum">色彩最低值</string>
+    <string name="saturation">飽和度</string>
+    <string name="value">數值</string>
+    <string name="contrast">對比度</string>
+    <string name="hue">色調</string>
+    <string name="grayscale">灰白模式</string>
+
+    <string name="presets_dialog_title">選取類型</string>
+    <!-- Presets -->
+    <string name="preset_default">預設</string>
+    <string name="preset_version_1">版本 1</string>
+    <string name="preset_version_2">版本 2</string>
+    <string name="preset_version_3">版本 3</string>
+    <string name="preset_triluminous">三原色</string>
+    <string name="preset_deep_black_white">純粹黑與非常白</string>
+    <string name="preset_deep_natural">深度自然</string>
+    <string name="preset_cool_amoled">冷色調</string>
+    <string name="preset_extreme_amoled">豐富色調</string>
+    <string name="preset_warm_amoled">暖色調</string>
+    <string name="preset_hybrid_mamba">混和曼巴</string>
+    <string name="preset_sir_banger">Sir Banger</string>
+    <string name="preset_gerard_extrem_cool">Gerard Extreme Cool</string>
+    <string name="preset_yoyoz808">Yoyoz808</string>
+    <string name="preset_purian">Purian</string>
+    <string name="preset_deep_black_colorful">Deep Black Colorful</string>
+    <string name="preset_vomer_deep_rich">Vomer Deep Rich</string>
+    <string name="preset_franco">Franco</string>
+    <string name="preset_wrinklefree_cool">WrinkleFree Cool</string>
+    <string name="preset_harley_tech">Harley-Tech</string>
+    <string name="preset_perfection">Perfection</string>
+    <string name="preset_banged_up">Banged up</string>
+    <string name="preset_sim_cooler">SimCooler</string>
+    <string name="preset_obsanity">Obsanity</string>
+    <string name="preset_obsanity_ips">Obsanity IPS</string>
+
+    <!-- USB fastcharge -->
+    <string name="usb_fastcharge_title">快速充電</string>
+    <string name="fastcharge_title">開啟快速充電</string>
+    <string name="fastcharge_summary">當連接到USB3.0接口時,充電提升至900mA。</string>
+
+    <!-- menu -->
+    <string name="kcal_presets" translatable="false">@string/presets_dialog_title</string>
+    <string name="kcal_reset">Reset</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">數值: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">預設</string>
+    <string name="custom_seekbar_default_value_to_set">預設數值: <xliff:g id="v">%s</xliff:g>\nLong press to set</string>
+    <string name="custom_seekbar_default_value_is_set">預設數值已設定</string>
+
+    <!-- Gestures: Touchscreen gestures -->
+    <string name="touch_gestures">手勢</string>
+
+    <!-- Log Tile -->
+    <string name="quick_settings_log_tile_label">LogTile</string>
+    <string name="quick_settings_log_tile_dialog_title">設定</string>
+    <string name="cannot_get_su">無超級使用者,操作失敗。</string>
+
+    <!-- FPS Info -->
+    <string name="fps_info_title">幀數顯示</string>
+    <string name="fps_info_summary">顯示當前每秒的幀數</string>
+
+    <!-- Ambient gesture haptic feedback -->
+    <string name="ambient_gesture_haptic_feedback">振動反饋</string>
+    <string name="ambient_gesture_haptic_feedback_summary">靜音時震動</string>
+
+    <!-- Ambient Display -->
+    <string name="ambient_display_enable_title">環境顯示</string>
+    <string name="ambient_display_enable_summary">收到通知時喚醒螢幕</string>
+    <string name="ambient_display_gestures_title">環境顯示</string>
+    <string name="ambient_display_gestures_summary">螢幕關閉時的手勢</string>
+    <string name="ambient_display_summary">收到通知時喚醒螢幕</string>
+    <string name="ambient_display_summary_on">收到通知時將會自動喚醒螢幕</string>
+    <string name="ambient_display_summary_off">收到通知時不會自動喚醒螢幕</string>
+
+    <!-- Doze sensor -->
+    <string name="tilt_sensor_title">傾斜感測器</string>
+    <string name="pickup_sensor_title">Pickup sensor</string>
+    <string name="proximity_sensor_title">鄰近感測器</string>
+
+    <!-- Hand wave gesture -->
+    <string name="hand_wave_gesture_title">揮手</string>
+    <string name="hand_wave_gesture_summary">揮手顯示通知</string>
+    <string name="hand_wave_gesture_flat_title">Detect orientation</string>
+    <string name="hand_wave_gesture_flat_summary">將電話朝下即可靜音通知和來電</string>
+
+    <!-- Pick-up gesture -->
+    <string name="pick_up_gesture_title">拿起</string>
+    <string name="pick_up_gesture_summary">拿起時顯示通知</string>
+
+    <!-- Pocket gesture -->
+    <string name="pocket_gesture_title"口袋</string>
+    <string name="pocket_gesture_summary">拿出口袋時顯示通知</string>
+
+    <!-- Proximity wake -->
+    <string name="proximity_wake_title">靠近喚醒</string>
+    <string name="proximity_wake_enable_title">靠近喚醒</string>
+    <string name="proximity_wake_enable_summary">靠近電話揮手喚醒</string>
+
+    <!-- Label for feature switch -->
+    <string name="switch_bar_on">開啟</string>
+
+    <!-- Label for feature switch -->
+    <string name="switch_bar_off">關閉</string>
+
+    <!-- Boosts -->
+    <string name="boost_title">Boost</string>
+    <string name="gpuboost_title">GPU Boost</string>
+    <string name="cpuboost_title">CPU Boost</string>
+    <string name="gpuboost_dialogTitle">選取 GPU Boost 等級</string>
+    <string name="cpuboost_dialogTitle">選取 CPU Boost 等級</string>
+
+    <!-- GPU/CPU Boost Presets -->
+    <string name="gpuboost_high">高</string>
+    <string name="gpuboost_medium">中</string>
+    <string name="gpuboost_low">低</string>
+    <string name="gpuboost_disable">停用</string>
+
+    <string name="cpuboost_extreme">極限</string>
+    <string name="cpuboost_high">高</string>
+    <string name="cpuboost_medium">中</string>
+    <string name="cpuboost_low">低</string>
+    <string name="cpuboost_disable">停用</string>
+
+    <!-- Touchboost -->
+    <string name="touchboost_title">開啟觸控加速</string>
+    <string name="touchboost_summary">檢測到觸控時加速CPU獲得流暢體驗</string>
+
+    <!-- Selinux Switch -->
+    <string name="selinux_category">SELinux</string>
+    <string name="selinux_explanation_summary">SELinux是一組內核修改和用戶空間工具。更改模式可能會導致不良影響。使用風險自負</string>
+    <string name="selinux_mode_title">SELinux模式</string>
+    <string name="selinux_permissive_summary">允許</string>
+    <string name="selinux_enforcing_summary">執行</string>
+    <string name="selinux_persistence_title">重新啟動後仍然維持</string>
+    <string name="selinux_persistence_summary">在每次啟動時恢復上述設定的Sepolicy模式</string>
+    <string name="selinux_permissive_toast_title">Selinux設定為寬鬆執行！</string>
+    <string name="selinux_enforcing_toast_title"> Selinux設定為強制執行！</string>
+
+</resources>
