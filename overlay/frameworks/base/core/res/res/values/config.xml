@@ -653,4 +653,6 @@
     <!-- If face auth sends the user directly to home/last open app, or stays on keyguard -->
     <bool name="config_faceAuthDismissesKeyguard">true</bool>
 
+    <!-- Workaround to trim baseband version's string of some devices with duplicated baseband string -->
+    <bool name="config_trim_baseband_version_string">true</bool>
 </resources>
