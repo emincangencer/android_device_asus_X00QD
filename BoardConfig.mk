@@ -229,5 +229,8 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 WIFI_DRIVER_OPERSTATE_PATH := "/sys/class/net/wlan0/operstate"
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
+# Notch
+TARGET_PROVIDES_OWN_NO_CUTOUT_OVERLAY=true
+
 # inherit from the proprietary version
 -include vendor/asus/X00QD/BoardConfigVendor.mk
