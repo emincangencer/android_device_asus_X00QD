@@ -103,67 +103,20 @@ static void init_alarm_boot_properties()
 
 void vendor_check_variant()
 {
-    struct sysinfo sys;
-    char const *region_file = "/mnt/vendor/persist/flag/countrycode.txt";
-    char const *build_fingerprint, *product_device, *product_model, *product_name;
-    std::string region;
+    char const *build_fingerprint, *build_description, *product_device, *product_model, *product_name;
 
-    sysinfo(&sys);
-
-    // Make sure the region value is trimmed first
-    if (ReadFileToString(region_file, &region))
-        region = Trim(region);
-
-    // Russian model has a slightly different product name
-    if (region == "RU")
-        product_name = "RU_X00QD";
-    else
-        product_name = "WW_X00QD";
-
-    // 6 GB variant
-    if (sys.totalram > 4096ull * 1024 * 1024) {
-        // Russian model
-        if (region == "RU") {
-            build_fingerprint = "google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys";
-            product_device = "ASUS_X00QD";
-
-        // Global model
-        } else {
-            build_fingerprint = "google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys";
-            product_device = "ASUS_X00QD";
-        }
-
-    // 3/4 GB variants
-    } else {
-        // Russian model
-        if (region == "RU") {
-            build_fingerprint = "google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys";
-            product_device = "ASUS_X00QD";
-
-        // Global model
-        } else {
-            build_fingerprint = "google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys";
-            product_device = "ASUS_X00QD";
-        }
-    }
-
-    // Product model overrides
-    if (region == "RU" || region == "TW" ||
-        (region == "PH" && sys.totalram > 3072ull * 1024 * 1024))
-        product_model = "ASUS_X00QD";
-    else if (sys.totalram < 3072ull * 1024 * 1024)
-        product_model = "ASUS_X00QD";
-    else
-        product_model = "ASUS_X00QD";
+    product_name = "ASUS_X00QD";
+    product_device = "ASUS_X00QD";
+    product_model = "ASUS_X00QD";
+    build_fingerprint = "google/coral/coral:11/RP1A.200720.009/6720564:user/release-keys";
+    build_description = "coral-user 11 RP1A.200720.009 6720564 release-keys";
 
     // Override props based on values set
+    property_override("ro.build.description", build_description);
     property_override_dual("ro.product.device", "ro.vendor.product.device", product_device);
     property_override_dual("ro.product.model", "ro.vendor.product.model", product_model);
     property_override_dual("ro.product.name", "ro.vendor.product.name", product_name);
     property_override_triple("ro.build.fingerprint", "ro.vendor.build.fingerprint", "ro.bootimage.build.fingerprint", build_fingerprint);
-
-    // Set region code via ro.config.versatility prop
-    property_set("ro.config.versatility", region);
 }
 
 void vendor_load_properties()
