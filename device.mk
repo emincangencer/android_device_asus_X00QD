@@ -435,6 +435,11 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
     libvndfwk_detect_jni.qti
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES := $(LOCAL_PATH)
+PRODUCT_BOARD_PLATFORM := sdm660
+PRODUCT_USES_QCOM_HARDWARE := true
+
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
@@ -454,9 +459,6 @@ PRODUCT_COPY_FILES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
     telephony-ext
 
 # Tetheroffload
