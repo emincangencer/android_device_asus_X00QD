@@ -3095,7 +3095,6 @@ vendor/bin/fmfactorytestserver
 vendor/bin/ftmdaemon
 vendor/bin/ftmtest
 vendor/bin/hal_proxy_daemon
-vendor/bin/hw/android.hardware.atrace@1.0-service
 vendor/bin/hw/vendor.ims.airtrigger@1.0-service
 vendor/bin/hw/vendor.ims.airtrigger@1.1-service
 vendor/bin/hw/vendor.ims.glovemode@1.0-service
@@ -3144,7 +3143,6 @@ vendor/etc/ID/ASUS/Launcher/default_workspace/default_allapp.xml
 vendor/etc/ID/ASUS/Launcher/default_workspace/phone_workspace.xml
 vendor/etc/IN/ASUS/Launcher/default_workspace/default_allapp.xml
 vendor/etc/IN/ASUS/Launcher/default_workspace/phone_workspace.xml
-vendor/etc/init/android.hardware.atrace@1.0-service.rc
 vendor/etc/init/dataadpl.rc
 vendor/etc/init/dataqti.rc
 vendor/etc/init/dpmQmiMgr.rc
