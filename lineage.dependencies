@@ -2,5 +2,12 @@
   {
     "repository": "android_kernel_asus_sdm660",
     "target_path": "kernel/asus/sdm660"
+  },
+  {
+    "repository"  : "kdrag0n/proton-clang",
+    "target_path" : "prebuilts/clang/host/linux-x86/clang-proton",
+    "clone_depth": "1",
+    "branch": "master",
+    "remote": "github"
   }
 ]
