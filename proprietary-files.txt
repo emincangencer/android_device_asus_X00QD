@@ -3120,7 +3120,6 @@ vendor/bin/test_diag
 vendor/bin/test_module_pproc
 vendor/bin/vendor_cmd_tool
 vendor/bin/wdsdaemon
-vendor/bin/wifilearner
 vendor/bin/wigighalsvc
 vendor/bin/xtwifi-client
 vendor/bin/xtwifi-inet-agent
@@ -3162,7 +3161,6 @@ vendor/etc/init/vendor.ims.airtrigger@1.0-service.rc
 vendor/etc/init/vendor.ims.airtrigger@1.1-service.rc
 vendor/etc/init/vendor.ims.glovemode@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.cryptfshw@1.0-service-qti.rc
-vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc
 vendor/etc/init/vendor.rild.rc
 vendor/etc/JP/ACJ/Launcher/default_workspace/default_allapp.xml
