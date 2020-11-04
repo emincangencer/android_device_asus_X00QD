@@ -54,10 +54,10 @@ EVO_SUPPORT_URL := https://t.me/EvolutionXX00QD
 EVO_BUILD_TYPE := OFFICIAL
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="coral-user 11 RP1A.201005.004 6782484 release-keys"
+    PRIVATE_BUILD_DESC="coral-user 11 RP1A.201105.002 6869500 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys
+BUILD_FINGERPRINT := google/coral/coral:11/RP1A.201005.002/6869500:user/release-keys
 
 # The following system and vendor props will be set by vendor init
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
