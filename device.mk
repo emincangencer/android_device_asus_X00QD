@@ -407,6 +407,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/power-libperfmgr/sdm636_powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
     
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel
+    
 # ATRACE_HAL
 PRODUCT_PACKAGES += \
     android.hardware.atrace@1.0-service
@@ -474,7 +480,6 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES := $(LOCAL_PATH)
 PRODUCT_BOARD_PLATFORM := sdm660
 PRODUCT_USES_QCOM_HARDWARE := true
 
