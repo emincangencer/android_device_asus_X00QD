@@ -107,8 +107,8 @@ void vendor_check_variant()
     product_name = "ASUS_X00QD";
     product_device = "ASUS_X00QD";
     product_model = "ASUS_X00QD";
-    build_fingerprint = "google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys";
-    build_description = "coral-user 11 RP1A.201105.002 6869500 release-keys";
+    build_fingerprint = "google/coral/coral:11/RQ1A.201205.008/6943376:user/release-keys";
+    build_description = "coral-user 11 RQ1A.201205.008 6943376 release-keys";
 
     // Override props based on values set
     property_override("ro.build.description", build_description);
