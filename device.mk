@@ -406,6 +406,10 @@ PRODUCT_PACKAGES += \
 # Powerhint
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/power-libperfmgr/sdm636_powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    
+# ATRACE_HAL
+PRODUCT_PACKAGES += \
+    android.hardware.atrace@1.0-service
 
 # Protobuf
 PRODUCT_PACKAGES += \
