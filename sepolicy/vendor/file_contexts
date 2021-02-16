@@ -1,3 +1,6 @@
+# Debugfs
+/sys/kernel/debug/system_stats                                                                                              u:object_r:debugfs:s0
+
 # Goodix Fingerprint
 /dev/goodix_fp                                                          u:object_r:fingerprintd_device:s0
 
