@@ -3026,9 +3026,8 @@ vendor/lib/libwfdmodulehdcpsession.so
 vendor/lib64/libwfdhdcpcp.so
 
 # WiFi
-vendor/bin/cnss-daemon
-vendor/bin/cnss_diag
-vendor/bin/fstman
+vendor/bin/cnss-daemon|d7118e205124e456e6d5ff01efeb8ad931001eb3
+
 
 # rootdir
 vendor/bin/diag_mdlog
