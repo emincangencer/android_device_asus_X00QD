@@ -1,0 +1,3 @@
+allow zygote exported_camera_prop:file { read };
+allow zygote proc_cmdline:file { read };
+allow zygote device:file { write };
