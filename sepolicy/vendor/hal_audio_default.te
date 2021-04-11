@@ -1,2 +1,5 @@
-allow hal_audio_default bluetooth_prop:file { read };
-allow hal_audio_default property_socket:sock_file { write };
+allow hal_audio_default sysfs:dir { open read };
+allow hal_audio_default default_prop:file read;
+allow hal_audio_default sysfs_net:dir open;
+allow hal_audio_default self:process execmem;
+allow hal_audio_default bluetooth_prop:file { open read getattr };
