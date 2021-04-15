@@ -107,7 +107,6 @@ PRODUCT_PACKAGES += \
     libspkrprot \
     libssrec \
     libvolumelistener \
-    tinymix \
     libtinycompress \
     libtinycompress.vendor
 
