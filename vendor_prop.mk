@@ -16,10 +16,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.media_vol_default=9 \
     ro.config.media_vol_steps=25 \
     ro.config.vc_call_vol_steps=7 \
-    ro.vendor.audio.sdk.fluencetype=fluence  \
     ro.vendor.audio.sdk.ssr=false \
     vendor.audio.adm.buffering.ms=3 \
     vendor.audio.dolby.ds2.enabled=false \
+    ro.vendor.audio.sdk.fluencetype=fluence \
     vendor.audio.dolby.ds2.hardbypass=false \
     vendor.audio.flac.sw.decoder.24bit=true \
     vendor.audio.hw.aac.encoder=true \
@@ -41,6 +41,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Audio feature flags
 PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.audio.feature.multi_voice_session.enable=true \
     vendor.audio.feature.afe_proxy.enable=true \
     vendor.audio.feature.anc_headset.enable=true \
     vendor.audio.feature.audiozoom.enable=false \
