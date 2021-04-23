@@ -28,13 +28,15 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from X00QD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080
-
 PRODUCT_BRAND := asus
 PRODUCT_DEVICE := X00QD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_NAME := lineage_X00QD
+
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
@@ -49,3 +51,10 @@ BUILD_FINGERPRINT := google/redfin/redfin:11/RQ3A.210605.005/7349499:user/releas
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
+# Sakura flags
+SAKURA_OFFICIAL := true
+SAKURA_MAINTAINER := Henrique Ferreira
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SCREEN_HEIGHT := 2160
+TARGET_SCREEN_WIDTH := 1080
