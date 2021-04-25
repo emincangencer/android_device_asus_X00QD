@@ -1,1 +1,1 @@
-allow bootanim userspace_reboot_exported_prop:file { read open };
+allow bootanim userspace_reboot_exported_prop:file { read open getattr };

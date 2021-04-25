@@ -1,6 +1,6 @@
 allow qti_init_shell vendor_radio_data_file:dir rw_dir_perms;;
 allow qti_init_shell vendor_radio_data_file:file create_file_perms;
-
+dontaudit qti_init_shell qti_init_shell:capability { dac_override dac_read_search };
 allow qti_init_shell sysfs_usb_rndis:file write;
 
 set_prop(qti_init_shell, debug_prop)
