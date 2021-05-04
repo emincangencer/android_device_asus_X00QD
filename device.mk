@@ -103,6 +103,7 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
+    libldacBT_bco \
     libsndmonitor \
     libspkrprot \
     libssrec \
