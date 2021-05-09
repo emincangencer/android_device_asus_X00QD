@@ -1,6 +1,9 @@
 type cdfinger_data_file, file_type, data_file_type, core_data_file_type;
 type debugfs_power_stats, fs_type, debugfs_type;
 
+# FPS Info
+type sysfs_fps, sysfs_type, fs_type;
+
 # sysfs
 type sysfs_touchpanel, sysfs_type, fs_type;
 type sysfs_usb_rndis, sysfs_type, fs_type;
