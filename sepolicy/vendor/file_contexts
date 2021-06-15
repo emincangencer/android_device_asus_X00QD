@@ -30,7 +30,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock                                           u:object_r:hal_power_stats_default_exec:s0
 
 # Thermal
-/vendor/bin/hw/android\.hardware\.thermal@2\.0-service\.qti                u:object_r:hal_thermal_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@2\.0-service\.mock               u:object_r:hal_thermal_default_exec:s0
 
 # Device nodes
 /dev/stune(/.*)?                                                                    u:object_r:cgroup:s0
