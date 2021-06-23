@@ -1,1 +1,4 @@
 allow init proc:file { write };
+allow init vendor_file:file execute;
+allow init hal_audio_default:binder { call };
+
