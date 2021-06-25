@@ -11,3 +11,5 @@ vendor.thermal.config                            u:object_r:vendor_thermal_prop:
 
 # Audio
 use.audio.eu.parameters            u:object_r:hal_audio_prop:s0
+audio.asus.rcv_amp_cal             u:object_r:hal_audio_prop:s0
+audio.asus.spk_amp_cal             u:object_r:hal_audio_prop:s0 
