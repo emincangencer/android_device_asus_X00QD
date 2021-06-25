@@ -320,7 +320,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # WFD display
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.debug.wfd.enable=1 \
     debug.sf.enable_hwc_vds=1 \
     persist.sys.wfd.virtual=0
 
