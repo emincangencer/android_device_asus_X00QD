@@ -15,4 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_X00TD.mk
+    $(LOCAL_DIR)/evolution_X00QD.mk
+
+COMMON_LUNCH_CHOICES := \
+    evolution_X00QD-userdebug \
+    evolution_X00QD-eng

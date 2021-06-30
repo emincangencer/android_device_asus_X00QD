@@ -1,12 +1,14 @@
 # Goodix Fingerprint
 /dev/goodix_fp                                                          u:object_r:fingerprintd_device:s0
 
-# Keylayout
-/(vendor|system/vendor)/usr/keylayout(/.*)?                             u:object_r:keylayout_file:s0
+# Firmware
+/firmware                                                                     u:object_r:firmware_file:s0
+/bt_firmware                                                                  u:object_r:bt_firmware_file:s0
+/persist(/.*)?                                                  u:object_r:mnt_vendor_file:s0
 
 # Sensors
-/sys/devices/virtual/input/input[0-9]+/stk3x1x-proximity(/.*)?          u:object_r:sysfs_sensors:s0
-/sys/devices/virtual/input/input[0-9]+/stk3x1x-light(/.*)?              u:object_r:sysfs_sensors:s0
+/sys/devices/virtual/sensors/frgbsensor(/.*)?		u:object_r:sysfs_sensors:s0
+/sys/devices/virtual/sensors/[lp]sensor(/.*)?		u:object_r:sysfs_sensors:s0
 
 # NFC
 /(vendor|system/vendor)/bin/hw/vendor\.nxp\.nxpnfc@1\.0-service         u:object_r:nxpnfc_hal_svc_exec:s0
@@ -21,4 +23,18 @@
 
 /sys/module/usb_f_qcrndis/parameters(/.*)?         u:object_r:sysfs_usb_rndis:s0
 
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.X00TD                    u:object_r:hal_lineage_touch_default_exec:s0
+# FPS Info
+/sys/devices/virtual/graphics/fb0/measured_fps                              u:object_r:sysfs_fps:s0
+
+# Kcal
+/sys/devices/platform/kcal_ctrl\.0(/.*)?                                 u:object_r:kcal_dev:s0
+/sys/bus/platform/drivers/kcal_ctrl(/.*)?                               u:object_r:kcal_dev:s0
+
+# Touchboost
+/sys/module/msm_performance/parameters/touchboost		            u:object_r:sysfs_touchboost:s0
+
+# Notification LED
+/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/red/max_brightness  u:object_r:sysfs_graphics:s0
+/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/green/max_brightness  u:object_r:sysfs_graphics:s0
+/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/red/brightness  u:object_r:sysfs_graphics:s0
+/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d000/leds/green/brightness  u:object_r:sysfs_graphics:s0

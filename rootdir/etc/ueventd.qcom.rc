@@ -55,6 +55,8 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/dpl_ctrl             0660   usb        usb
 /dev/ipa_odl_ctl          0660   radio      radio
 /dev/ipa_adpl             0660   system     oem_2905
+/dev/synx_device          0660   root       camera
+/dev/hab                  0666   system     system
 
 #permissions for CSVT
 /dev/smd11                0660   radio      radio
@@ -122,21 +124,26 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/at_usb0              0640   radio      radio
 /dev/at_mdm0              0640   radio      radio
 /dev/video*               0660   system     camera
+/dev/cvp*                 0660   system     camera
 /dev/media*               0660   system     camera
 /dev/v4l-subdev*          0660   system     camera
 /dev/qseecom              0660   system     drmrpc
 /dev/qce                  0660   system     drmrpc
-/dev/smcinvoke            0660   system     system
+/dev/smcinvoke            0660   system     drmrpc
 /dev/qsee_ipc_irq_spss    0660   system     drmrpc
 /dev/seemplog             0660   system     system
 /dev/pft                  0660   system     drmrpc
 /dev/spcom                0660   system     system
+/dev/spss_utils           0660   system     system
 /dev/sp_kernel            0660   system     system
 /dev/sp_ssr               0660   system     system
 /dev/sp_keymaster         0660   system     system
 /dev/sec_nvm_*            0660   system     system
 /dev/cryptoapp            0660   system     system
 /dev/spdaemon_ssr         0660   system     system
+/dev/iuicc                0660   system     system
+/dev/iuicc0               0660   system     system
+/dev/iuicc1               0660   system     system
 /dev/gemini0              0660   system     camera
 /dev/jpeg0                0660   system     camera
 /dev/jpeg1                0660   system     camera
@@ -157,6 +164,14 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/fpsdev0              0666   system     system
 /* Huaqin modify for ZQL1650-143 by wangxiang at 2018/01/23 end */
 
+#qg
+/dev/qg                   0660  system     system
+/dev/qg_battery           0660  system     system
+
+#qvr
+/dev/qvr_external_sensor_ioctl      0660  system  system
+/sys/kernel/qvr_external_sensor/fd  0660  system  system
+
 /* Huaqin add for ZQL1650-143 by wangxiang at 2018/02/09 end */
 /dev/goodix_fp            0666   system     system
 /* Huaqin add for ZQL1650-143 by wangxiang at 2018/02/09 end */
@@ -175,6 +190,7 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/msm_vidc_dec_sec     0660   system     audio
 /dev/msm_vidc_enc         0660   system     audio
 /dev/msm_rotator          0660   system     system
+/dev/hw_random            0600   root       root
 /dev/sdsprpc-smd          0660   system     system
 
 #permissions for audio
@@ -327,7 +343,9 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/ramdump*             0640   system     system
 
 # Fingerprint device
-/dev/qbt1000              0660   system     system
+/dev/qbt*                 0660   system     system
+/sys/class/fts/touch_aoi aoi_set 0660 root system
+/sys/class/fts/touch_aoi power_set 0660 root system
 
 #ImproveTouch device
 /dev/hbtp_input           0660   system     system
@@ -341,6 +359,8 @@ firmware_directories /vendor/firmware_mnt/image/
 /dev/block/platform/soc/c0c4000.sdhci/by-name/frp       0600   system     system
 /dev/block/platform/soc/1d84000.ufshc/by-name/frp       0600   system     system
 /dev/block/platform/soc/7c4000.sdhci/by-name/frp        0600   system     system
+/dev/block/platform/soc/4744000.sdhci/by-name/frp       0600   system     system
+/dev/block/platform/soc/4804000.ufshc/by-name/frp       0600   system     system
 
 # This is temporary while using SD card for initial bring-up
 /dev/block/platform/soc/8804000.sdhci/by-name/frp       0600   system     system
@@ -369,6 +389,8 @@ firmware_directories /vendor/firmware_mnt/image/
 
 #Memory Offline
 /sys/devices/system/memory/memory* state    0660 system system
+
+/sys/devices/virtual/hdcp/msm_hdcp  min_level_change 0664    system  graphics
 
 # sys-fs display
 /sys/class/graphics/fb*     hpd                      0664    system  graphics

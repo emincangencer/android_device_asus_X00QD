@@ -3,9 +3,7 @@ LOCAL_PATH := $(call my-dir)
 ifndef BOARD_VNDK_VERSION
 
 VNDK_SP_LIBRARIES := \
-    libdexfile \
-    libartbase \
-    libziparchive
+    libdexfile_support \
 
 install_in_hw_dir := \
    android.hidl.memory@1.0-impl
@@ -27,6 +25,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_INSTALLED_MODULE_STEM := $1.so
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_RELATIVE_PATH := $(vndk_sp_dir)$(if $(filter $1,$(install_in_hw_dir)),/hw)
+LOCAL_CHECK_ELF_FILES := false
 include $$(BUILD_PREBUILT)
 
 ifneq ($$(TARGET_2ND_ARCH),)
@@ -41,6 +40,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_INSTALLED_MODULE_STEM := $1.so
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_RELATIVE_PATH := $(vndk_sp_dir)$(if $(filter $1,$(install_in_hw_dir)),/hw)
+LOCAL_CHECK_ELF_FILES := false
 include $$(BUILD_PREBUILT)
 endif # TARGET_TRANSLATE_2ND_ARCH is not true
 endif # TARGET_2ND_ARCH is not empty
