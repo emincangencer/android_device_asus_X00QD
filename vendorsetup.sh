@@ -1,5 +1,5 @@
 # Proton Clang
-git clone https://github.com/kdrag0n/proton-clang -b master prebuilts/clang/host/linux-x86/clang-proton
+git clone https://github.com/kdrag0n/proton-clang -b master prebuilts/clang/host/linux-x86/clang-proton --depth=1
 
 # Display Hal (so WFD can work)
 rm -rf hardware/qcom-caf/msm8998/display
