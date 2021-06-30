@@ -512,7 +512,7 @@ PRODUCT_COPY_FILES += \
 
 # Adapt Launch 
 PRODUCT_COPY_FILES += \
-$(COMMON_PATH)/configs/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml \
+$(LOCAL_PATH)/configs/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml \
 
 # Touchscreen
 PRODUCT_PACKAGES += \
