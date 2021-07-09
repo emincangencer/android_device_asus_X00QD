@@ -1,0 +1,20 @@
+[
+	{
+		"repository": "AOSP-11/hardware_qcom-caf_display_msm8998",
+		"target_path": "hardware/qcom-caf/msm8998-asus/display",
+		"remote": "github",
+		"branch": "11"
+	},
+	{
+		"repository": "AOSP-11/hardware_qcom-caf_audio_msm8998",
+		"target_path": "hardware/qcom-caf/msm8998-asus/audio",
+		"remote": "github",
+		"branch": "11"
+	},
+	{
+		"repository": "AOSP-11/hardware_qcom-caf_media_msm8998",
+		"target_path": "hardware/qcom-caf/msm8998-asus/media",
+		"remote": "github",
+                "branch": "11"
+	}
+]
