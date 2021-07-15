@@ -1,0 +1,2 @@
+allow adbd adbd:process { setcurrent };
+allow adbd adbd:capability { sys_admin };
