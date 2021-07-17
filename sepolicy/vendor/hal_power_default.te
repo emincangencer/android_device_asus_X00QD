@@ -11,7 +11,7 @@ allow hal_power_default { sysfs_devfreq sysfs_kgsl }:{ file lnk_file } rw_file_p
 allow hal_power_default sysfs_devices_system_cpu:file rw_file_perms;
 allow hal_power_default sysfs:file { read open getattr };
 
-allow hal_power_default proc:file { write };
+allow hal_power_default proc:{ file lnk_file } rw_file_perms;
 r_dir_file(hal_power_default, sysfs_graphics)
 
 # To dump
