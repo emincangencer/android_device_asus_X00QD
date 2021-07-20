@@ -155,12 +155,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=1 \
     debug.sf.disable_backpressure=1 \
     vendor.gralloc.enable_fb_ubwc=1 \
-    debug.hwui.use_buffer_age=false \
-    dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
     ro.opengles.version=196610 \
     ro.sf.lcd_density=420 \
-    sdm.debug.rotator_downscale=1 \
     vendor.display.enable_default_color_mode=1
 
 # IMS
@@ -216,24 +213,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.nfc_nci=nqx.default \
     ro.nfc.port=I2C
-
-# QCOM cabl
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.display.cabl=2
-
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.vendor.qti.va_aosp.support=1
-
-PRODUCT_ODM_PROPERTIES += \
-    ro.vendor.qti.va_odm.support=1
-
-# QTI
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.at_library=libqti-at.so \
-    ro.vendor.extension_library=libqti-perfd-client.so \
-    ro.vendor.qti.core_ctl_min_cpu=2 \
-    ro.vendor.qti.core_ctl_max_cpu=4 \
-    ro.vendor.qti.sys.fw.bg_apps_limit=60
 
 # Radio
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -292,11 +271,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.surface_flinger.force_hwc_copy_for_virtual_displays=true \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
-    ro.surface_flinger.max_virtual_display_dimension=4096 \
-    ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
-    ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_phase_offset_ns=500000 \
