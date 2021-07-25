@@ -2,6 +2,7 @@ typeattribute vendor_init data_between_core_and_vendor_violators;
 
 allow vendor_init asdf_file:lnk_file read;
 allow vendor_init fac_file:filesystem getattr;
+allow vendor_init log_file:dir relabelto;
 
 allow vendor_init {
   system_data_file
