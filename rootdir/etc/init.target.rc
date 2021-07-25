@@ -114,6 +114,16 @@ on fs
     chmod 0644 /mnt/vendor/dsp/fastrpc_shell_3
     mount none /mnt/vendor/dsp/fastrpc_shell_3 /vendor/dsp/cdsp/fastrpc_shell_3 bind
 
+    chown system system /vendor/ADF
+    chmod 0775 /vendor/ADF
+    restorecon_recursive /vendor/ADF
+    chown root system /APD
+    chmod 0771 /APD
+    restorecon_recursive /APD
+    chown root system /asdf
+    chmod 0771 /asdf
+    restorecon_recursive /asdf
+
 on post-fs
     start vendor.qseecomd
     wait_for_prop vendor.sys.listeners.registered true
