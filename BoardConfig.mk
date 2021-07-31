@@ -188,11 +188,15 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
+BOARD_ROOT_EXTRA_FOLDERS := APD asdf odm oem
+
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /mnt/vendor/persist:/persist \
     /vendor/bt_firmware:/bt_firmware \
     /vendor/dsp:/dsp \
-    /vendor/firmware_mnt:/firmware
+    /vendor/firmware_mnt:/firmware \
+    /vendor/ADF:/ADF \
+    /vendor/factory:factory
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true

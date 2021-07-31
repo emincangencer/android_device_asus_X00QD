@@ -1,0 +1,49 @@
+#This is init.asus.rc for user build.
+
+# Custom ROM changes - start
+on boot
+
+on init
+
+on charger
+
+on fs
+    wait /dev/block/bootdevice/by-name/APD
+    chown root system /APD
+    chmod 0771 /APD
+    restorecon_recursive /APD
+    wait dev/block/bootdevice/by-name/asdf
+    chown root system /asdf
+    chmod 0771 /asdf
+    restorecon_recursive /asdf
+
+# Custom ROM changes - end
+
+on late-init
+
+on post-fs-data
+
+    # ASUS_BSP ultrabatterylife mode
+    chmod 0777 /vendor/asdf/CHGLimit
+    chmod 0777 /vendor/asdf/CHGLimit_kernel
+
+on fs
+    chmod 0770 /vendor/factory
+    restorecon_recursive /vendor/factory
+
+    chmod 770 /mnt/vendor/persist
+	chmod 770 /mnt/vendor/persist/data
+
+    chown system system /vendor/ADF
+    chmod 0775 /vendor/ADF
+    restorecon_recursive /vendor/ADF
+
+on boot
+
+on charger
+    chown system system /vendor/factory
+    chmod 0770 /vendor/factory
+    chown root root /vendor/asdf
+    chmod 0775 /vendor/asdf
+    write /vendor/asdf/CHGLimit 0
+    write /vendor/asdf/CHGLimit_kernel 0

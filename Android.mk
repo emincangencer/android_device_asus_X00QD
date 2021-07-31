@@ -33,13 +33,21 @@ DSP_MOUNT_POINT := $(TARGET_OUT_VENDOR)/dsp
 $(FIRMWARE_MOUNT_POINT):
 	@echo "Creating $(FIRMWARE_MOUNT_POINT)"
 	@mkdir -p $(TARGET_OUT_VENDOR)/firmware_mnt
+ADF_MOUNT_POINT := $(TARGET_OUT_VENDOR)/ADF
+$(ADF_MOUNT_POINT): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating $(ADF_MOUNT_POINT)"
+	@mkdir -p $(TARGET_OUT_VENDOR)/ADF
 $(BT_FIRMWARE_MOUNT_POINT):
 	@echo "Creating $(BT_FIRMWARE_MOUNT_POINT)"
 	@mkdir -p $(TARGET_OUT_VENDOR)/bt_firmware
 $(DSP_MOUNT_POINT):
 	@echo "Creating $(DSP_MOUNT_POINT)"
 	@mkdir -p $(TARGET_OUT_VENDOR)/dsp
-ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_MOUNT_POINT) $(BT_FIRMWARE_MOUNT_POINT) $(DSP_MOUNT_POINT)
+FACTORY_MOUNT_POINT := $(TARGET_OUT_VENDOR)/factory
+$(FACTORY_MOUNT_POINT): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating $(FACTORY_MOUNT_POINT)"
+	@mkdir -p $(TARGET_OUT_VENDOR)/factory
+ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_MOUNT_POINT) $(ADF_MOUNT_POINT) $(BT_FIRMWARE_MOUNT_POINT) $(DSP_MOUNT_POINT) $(FACTORY_MOUNT_POINT)
 
 IMS_LIBS := libimscamera_jni.so libimsmedia_jni.so
 IMS_SYMLINKS := $(addprefix $(TARGET_OUT_APPS_PRIVILEGED)/ims/lib/arm64/,$(notdir $(IMS_LIBS)))
@@ -104,6 +112,23 @@ $(WCNSS_MAC_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 	$(hide) ln -sf /mnt/vendor/persist/$(notdir $@) $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(WCNSS_INI_SYMLINK) $(WCNSS_MAC_SYMLINK)
+APD_MOUNT_SYMLINK := $(TARGET_OUT_VENDOR)/APD
+$(APD_MOUNT_SYMLINK): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating APD mount symlink: $@"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf /APD $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(APD_MOUNT_SYMLINK)
+
+ASDF_MOUNT_SYMLINK := $(TARGET_OUT_VENDOR)/asdf
+$(ASDF_MOUNT_SYMLINK): $(LOCAL_INSTALLED_MODULE)
+	@echo "Creating asdf mount symlink: $@"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf /asdf $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(ASDF_MOUNT_SYMLINK)
 
 BT_FIRMWARE := apbtfw10.tlv apbtfw11.tlv apnv10.bin apnv11.bin crbtfw11.tlv crbtfw20.tlv crbtfw21.tlv crnv11.bin crnv20.bin crnv21.bin
 BT_FIRMWARE_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(BT_FIRMWARE)))

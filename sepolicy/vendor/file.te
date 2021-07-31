@@ -1,8 +1,18 @@
+# Asus mounts
+type adf_file, vendor_file_type, file_type;
+type apd_file, file_type;
+type asdf_file, file_type;
+type fac_file, vendor_file_type, file_type;
+allow fac_file self:filesystem associate;
+
 type cdfinger_data_file, file_type, data_file_type, core_data_file_type;
 type debugfs_power_stats, fs_type, debugfs_type;
 
 # FPS Info
 type sysfs_fps, sysfs_type, fs_type;
+
+# Data
+type batterystats_file, file_type;
 
 # sysfs
 type sysfs_touchpanel, sysfs_type, fs_type;
