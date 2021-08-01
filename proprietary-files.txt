@@ -3058,9 +3058,6 @@ vendor/bin/wigignpt
 
 # Misc
 -vendor/app/CACertService/CACertService.apk
--vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk
--vendor/app/SSGTelemetryService/SSGTelemetryService.apk
--vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk
 vendor/bin/adpl
 vendor/bin/athdiag
 vendor/bin/cplay
