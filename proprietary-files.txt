@@ -2225,7 +2225,6 @@ vendor/lib64/libloc_api_v02.so
 vendor/lib64/libloc_core.so
 vendor/lib64/liblowi_client.so
 vendor/lib64/liblowi_wifihal.so
-vendor/lib64/libqdma.so
 vendor/lib64/libqdma_file_agent.so
 vendor/lib64/libslimclient.so
 vendor/lib64/libxtadapter.so
@@ -3091,7 +3090,6 @@ vendor/bin/mm-qomx-ienc-test
 vendor/bin/myftm
 vendor/bin/pktlogconf
 vendor/bin/PktRspTest
-vendor/bin/qdmastatsd
 vendor/bin/qjpeg-dma-test
 vendor/bin/qmi_simple_ril_test
 vendor/bin/qseecom_sample_client
@@ -3133,14 +3131,12 @@ vendor/etc/init/imsqmidaemon.rc
 vendor/etc/init/imsrcsd.rc
 vendor/etc/init/ims_rtp_daemon.rc
 vendor/etc/init/init-qcril-data.rc
-vendor/etc/init/init.qdmastats.rc
 vendor/etc/init/init.time_daemon.rc
 vendor/etc/init/ipacm-diag.rc
 vendor/etc/init/ipacm.rc
 vendor/etc/init/netmgrd.rc
 vendor/etc/init/port-bridge.rc
 vendor/etc/init/rild.rc
-vendor/etc/init/tloc_daemon.rc
 vendor/etc/init/vendor.ims.airtrigger@1.0-service.rc
 vendor/etc/init/vendor.ims.airtrigger@1.1-service.rc
 vendor/etc/init/vendor.ims.glovemode@1.0-service.rc
@@ -3188,7 +3184,6 @@ vendor/lib/libopus.so
 vendor/lib/libperfconfig.so
 vendor/lib/libqcbor.so
 vendor/lib/libqcrildatactl.so
-vendor/lib/libqdma.so
 vendor/lib/libqdma_file_agent.so
 vendor/lib/libqti_vndfwk_detect.so
 vendor/lib/libsndmonitor.so
