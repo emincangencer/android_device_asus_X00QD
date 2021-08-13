@@ -1,4 +1,5 @@
 allow rild proc:file { getattr open read write };
+allow rild proc_evtlog:file write;
 
 dontaudit rild tombstone_data_file:dir search;
 dontaudit rild vendor_file:file ioctl;

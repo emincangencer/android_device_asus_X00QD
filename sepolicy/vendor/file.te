@@ -3,6 +3,7 @@ type adf_file, vendor_file_type, file_type;
 type apd_file, file_type;
 type asdf_file, file_type;
 type fac_file, vendor_file_type, file_type;
+type proc_evtlog, proc_type, sysfs_type, fs_type;
 allow fac_file self:filesystem associate;
 
 type cdfinger_data_file, file_type, data_file_type, core_data_file_type;
