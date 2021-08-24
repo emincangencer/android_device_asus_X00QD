@@ -2105,6 +2105,18 @@ vendor/lib64/libqfp-service.so
 vendor/lib64/libvendor.goodix.hardware.fingerprintextension@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
+# Fingerprint Firmware 16.
+vendor/etc/firmware/goodixfp.b00
+vendor/etc/firmware/goodixfp.b01
+vendor/etc/firmware/goodixfp.b02
+vendor/etc/firmware/goodixfp.b03
+vendor/etc/firmware/goodixfp.b04
+vendor/etc/firmware/goodixfp.b05
+vendor/etc/firmware/goodixfp.b05
+vendor/etc/firmware/goodixfp.b06
+vendor/etc/firmware/goodixfp.b07
+vendor/etc/firmware/goodixfp.mdt
+
 # Firmware
 vendor/firmware/a225p5_pm4.fw
 vendor/firmware/a225_pfp.fw
