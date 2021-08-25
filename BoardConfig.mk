@@ -29,9 +29,6 @@ BOARD_VENDOR := asus
 # Compile libhwui in performance mode
 HWUI_COMPILE_FOR_PERF := true
 
-# IPACM
-USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
-
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm636
 TARGET_NO_BOOTLOADER := true
