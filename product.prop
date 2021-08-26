@@ -1,8 +1,3 @@
-# IORAP
-ro.iorapd.enable=true
-iorapd.perfetto.enable=true
-iorapd.readahead.enable=true
-
 # Memory Management
 ro.config.fha_enable=true 
 ro.sys.fw.bg_apps_limit=32 

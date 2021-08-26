@@ -292,10 +292,6 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml
 
-# Iorap
-PRODUCT_PACKAGES += \
-    iorap-app-startup-runner
-
 # IPv6
 PRODUCT_PACKAGES += \
     ebtables \
