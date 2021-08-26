@@ -142,11 +142,15 @@ vendor/etc/acdbdata/ZE620KL/ZE620KL_Speaker_cal.acdb
 vendor/etc/acdbdata/ZE620KL/ZE620KL_workspaceFile.qwsp
 
 # Audio-Hardware
+vendor/lib/hw/audio.primary.default.so
+vendor/lib/hw/audio.primary.sdm660.so
 vendor/lib/libtinycompress_vendor.so
 vendor/lib/soundfx/libqcompostprocbundle.so
 vendor/lib/soundfx/libqcomvisualizer.so
 vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/soundfx/libvolumelistener.so
+vendor/lib64/hw/audio.primary.default.so
+vendor/lib64/hw/audio.primary.sdm660.so
 vendor/lib64/libtinycompress_vendor.so
 vendor/lib64/soundfx/libqcompostprocbundle.so
 vendor/lib64/soundfx/libqcomvisualizer.so
