@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 # Check if device supports Pie fingerprint
-if grep -R sdm660_64:9 /dev/block/by-name/factory; then
+if grep -q -w sdm660_64:9 /dev/block/by-name/factory; then
     echo "Device using pie firmware..."
 else
     echo "Deleting not needed fingerprint firmware..."

@@ -328,7 +328,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
 
-# Manifest replacement for non NFC variant
+# Check for firmware
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/bin/device_check.sh:install/bin/device_check.sh
 
