@@ -2018,7 +2018,6 @@ vendor/lib/libdrm.so
 vendor/lib/libdrmutils.so
 vendor/lib/libgpu_tonemapper.so
 vendor/lib/libgrallocutils.so
-vendor/lib/libqdMetaData.so
 vendor/lib/libqdutils.so
 vendor/lib/libqservice.so
 vendor/lib/libsdmcore.so
@@ -2028,14 +2027,10 @@ vendor/lib/vendor.display.config@1.0.so
 vendor/lib/vendor.display.config@1.1.so
 vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so
 vendor/lib64/hw/gralloc.default.so
-vendor/lib64/hw/gralloc.sdm660.so
-vendor/lib64/hw/hwcomposer.sdm660.so
-vendor/lib64/hw/memtrack.sdm660.so
 vendor/lib64/libdrm.so
 vendor/lib64/libdrmutils.so
 vendor/lib64/libgpu_tonemapper.so
 vendor/lib64/libgrallocutils.so
-vendor/lib64/libqdMetaData.so
 vendor/lib64/libqdutils.so
 vendor/lib64/libqservice.so
 vendor/lib64/libsdmcore.so
