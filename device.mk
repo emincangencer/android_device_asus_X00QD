@@ -265,6 +265,7 @@ PRODUCT_PACKAGES += \
     libgps.utils \
     liblocation_api \
     libsensorndkbridge \
+    libsynergy_loc_api \
     libwifi-hal-ctrl
 
 PRODUCT_COPY_FILES += \
