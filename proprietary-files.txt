@@ -3181,7 +3181,6 @@ vendor/lib/libperfconfig.so
 vendor/lib/libqcbor.so
 vendor/lib/libqcrildatactl.so
 vendor/lib/libqdma_file_agent.so
-vendor/lib/libqti_vndfwk_detect.so
 vendor/lib/libsndmonitor.so
 vendor/lib/libspkrprot.so
 vendor/lib/libssrec.so
@@ -3212,7 +3211,6 @@ vendor/lib/libstagefright_soft_vpxdec.so
 vendor/lib/libstagefright_soft_vpxenc.so
 vendor/lib/libsynergy_loc_api.so
 vendor/lib/libunlock.so
-vendor/lib/libvndfwk_detect_jni.qti.so
 vendor/lib/libvorbisidec.so
 vendor/lib/libvpx.so
 vendor/lib/libwifi-hal-ctrl.so
@@ -3248,7 +3246,6 @@ vendor/lib64/libmiracast.so
 vendor/lib64/libperfconfig.so
 vendor/lib64/libqcbor.so
 vendor/lib64/libqcrildatactl.so
-vendor/lib64/libqti_vndfwk_detect.so
 vendor/lib64/libreffeature.so
 vendor/lib64/libskewknob.so
 vendor/lib64/libsndmonitor.so
@@ -3257,7 +3254,6 @@ vendor/lib64/libssrec.so
 vendor/lib64/libstagefright_softomx.so
 vendor/lib64/libsynergy_loc_api.so
 vendor/lib64/libunlock.so
-vendor/lib64/libvndfwk_detect_jni.qti.so
 vendor/lib64/libwifi-hal-ctrl.so
 vendor/lib64/qtibus.so
 vendor/lib64/qtimutex.so
