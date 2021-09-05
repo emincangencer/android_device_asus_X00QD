@@ -2014,9 +2014,6 @@ vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 -lib64/libsdm-disp-apis.so
 vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so
 vendor/lib/hw/gralloc.default.so
-vendor/lib/hw/gralloc.sdm660.so
-vendor/lib/hw/hwcomposer.sdm660.so
-vendor/lib/hw/memtrack.sdm660.so
 vendor/lib/libdrm.so
 vendor/lib/libdrmutils.so
 vendor/lib/libgpu_tonemapper.so
