@@ -2012,7 +2012,6 @@ vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 # Display-Hardware
 -lib/libsdm-disp-apis.so
 -lib64/libsdm-disp-apis.so
-vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl.so
 vendor/lib/hw/gralloc.default.so
 vendor/lib/libdrm.so
 vendor/lib/libdrmutils.so
@@ -2023,9 +2022,6 @@ vendor/lib/libqservice.so
 vendor/lib/libsdmcore.so
 vendor/lib/libsdmextension.so
 vendor/lib/libsdmutils.so
-vendor/lib/vendor.display.config@1.0.so
-vendor/lib/vendor.display.config@1.1.so
-vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so
 vendor/lib64/hw/gralloc.default.so
 vendor/lib64/libdrm.so
 vendor/lib64/libdrmutils.so
@@ -2036,14 +2032,6 @@ vendor/lib64/libqservice.so
 vendor/lib64/libsdmcore.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libsdmutils.so
-vendor/lib64/vendor.display.config@1.0.so
-vendor/lib64/vendor.display.config@1.1.so
-vendor/lib64/vendor.display.config@1.2.so
-vendor/lib64/vendor.display.config@1.3.so
-vendor/lib64/vendor.display.config@1.4.so
-vendor/lib64/vendor.display.config@1.5.so
-vendor/lib64/vendor.display.config@1.6.so
-vendor/lib64/vendor.display.config@1.7.so
 
 # ESE-Powermanager
 product/lib/vendor.qti.esepowermanager@1.0.so
@@ -2512,26 +2500,12 @@ vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
 # Postprocessing
-product/lib/vendor.display.color@1.0.so
-product/lib/vendor.display.color@1.1.so
-product/lib/vendor.display.color@1.2.so
 product/lib/vendor.display.postproc@1.0.so
-product/lib64/vendor.display.color@1.0.so
-product/lib64/vendor.display.color@1.1.so
-product/lib64/vendor.display.color@1.2.so
 product/lib64/vendor.display.postproc@1.0.so
-vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/mm-pp-dpps
-vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/lib/libdisp-aba.so
-vendor/lib/vendor.display.color@1.0.so
-vendor/lib/vendor.display.color@1.1.so
-vendor/lib/vendor.display.color@1.2.so
 vendor/lib/vendor.display.postproc@1.0.so
 vendor/lib64/libdisp-aba.so
-vendor/lib64/vendor.display.color@1.0.so
-vendor/lib64/vendor.display.color@1.1.so
-vendor/lib64/vendor.display.color@1.2.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
 # QMI
@@ -3131,21 +3105,6 @@ vendor/etc/init/vendor.ims.glovemode@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.cryptfshw@1.0-service-qti.rc
 vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc
 vendor/etc/init/vendor.rild.rc
-vendor/etc/JP/ACJ/Launcher/default_workspace/default_allapp.xml
-vendor/etc/JP/ACJ/Launcher/default_workspace/phone_workspace.xml
-vendor/etc/RU/ASUS/Launcher/default_workspace/default_allapp.xml
-vendor/etc/RU/ASUS/Launcher/default_workspace/phone_workspace.xml
-vendor/etc/TW/ASUS/Launcher/default_workspace/default_allapp.xml
-vendor/etc/TW/ASUS/Launcher/default_workspace/phone_workspace.xml
-vendor/etc/US/ASUS/Launcher/default_workspace/default_allapp.xml
-vendor/etc/US/ASUS/Launcher/default_workspace/phone_workspace.xml
-vendor/etc/workspace_grid_setting.xml
-vendor/etc/WW/ASUS/Launcher/default_workspace/default_allapp.xml
-vendor/etc/WW/ASUS/Launcher/default_workspace/phone_workspace.xml
-vendor/etc/WW/TIM/Launcher/default_workspace/default_allapp.xml
-vendor/etc/WW/TIM/Launcher/default_workspace/phone_workspace.xml
-vendor/etc/WW/VF_IT/Launcher/default_workspace/default_allapp.xml
-vendor/etc/WW/VF_IT/Launcher/default_workspace/phone_workspace.xml
 vendor/lib/android.hardware.audio.common-util.so
 vendor/lib/android.hardware.audio.common@2.0-util.so
 vendor/lib/android.hardware.audio.common@4.0-util.so
